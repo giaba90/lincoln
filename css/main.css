@@ -1,0 +1,554 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body
+{
+    height: 100%;
+}
+
+p::selection {
+background:#ab2d30;
+color:#fff;
+}
+
+p::-moz-selection {
+background:#ab2d30;
+color:#fff;
+}
+
+p::-webkit-selection {
+background:#ab2d30;
+color:#fff;
+}
+
+#services{
+    outline: 0;
+}
+
+/* ==========================================================================
+   Font styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Menu styles
+   ========================================================================== */
+
+.menu
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 39px;
+    background-color: #fff;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.44);
+	-moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.44);
+	box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.44);
+	transition: all 0.5s ease 0s;
+}
+
+.name_theme{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	color: #cccccc;
+	margin-left: 12px;
+}
+
+.name_theme, .navigation{
+	display: block;
+	float: left;
+}
+
+/* da rivedere
+.navigation{
+	margin-left: 100px;
+}
+*/
+
+.navigation li{
+	width: 220px;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+	margin-top: 8px;
+	text-align: center;
+	list-style: none;
+}
+
+.navigation a{
+	font-size: 18px;
+	color: #000;
+	outline: none;
+}
+
+.navigation a:hover{
+	text-decoration: none;
+	color: #ab2d30;
+	border-bottom: 5px solid  #ab2d30;
+}
+
+.navigation a:focus{
+	text-decoration: none;
+}
+
+.navigation a.active{
+	color: #ab2d30;
+	border-bottom: 5px solid  #ab2d30;
+}
+
+/*
+.slide
+{
+	width: 100%;
+	position: relative;
+	padding: 150px 0;
+	text-align: center;
+}
+*/
+
+/* ==========================================================================
+   Slider styles
+   ========================================================================== */
+
+.flexslider{
+    border: 0 none;
+    box-shadow: none;
+    margin: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+li.clone{
+    width: 1280px;
+}
+
+ol.flex-control-nav {
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+/* ==========================================================================
+   Section styles
+   ========================================================================== */
+
+
+#skill, #contact {
+	background-color: #eeeeee;
+	width: 100%;
+
+}
+
+#contact_2{
+    background-color: #fff;
+}
+
+#about{
+    background-color: #fff;
+}
+
+#address{
+	background-color: #fff;
+	height: 48px;
+	position: relative;
+    box-shadow:         0px 2px 5px 0px #ddd;
+    /*top: 72%;*/
+}
+
+/* ==========================================================================
+   About us Section styles
+   ========================================================================== */
+
+.title h2{
+	font-family: 'bebas_neueregular','sans-serif';
+	font-size: 60px;
+	text-align: center;
+	margin-top: 54px;
+}
+
+.title hr{
+    border-top: 2px solid #ab2d30;
+    left: -8px;
+    margin-top: 0;
+    position: relative;
+    width: 110px;
+}
+
+.title p{
+	color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about_container{
+	margin-top: 70px;
+}
+
+.about_container img{
+	width: 220px;
+	height: 220px;
+	border-bottom: 4px solid #ab2d30;
+}
+
+.team{
+    width: 220px;
+    background-color: #eeeeee;
+    border: 2px solid #ececec;
+    margin-bottom: 15px;
+    overflow: hidden;
+    float: left;
+    margin-left: 100px;
+}
+
+.team:hover {
+    cursor: default;
+}
+.team:hover .detail {
+    margin-top: 0;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.team_image{
+    position: relative;
+}
+
+.detail{
+    border-bottom: 1px solid #ececec;
+    bottom: 0;
+    left: 0;
+    margin-top: -260px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.team_name{
+    padding: 15px 0;
+}
+
+/*
+.team{
+    width: 220px;
+}
+
+.team_detail{
+    background: #fff;
+    height: 100%;
+    left: 0;
+    padding: 0 15px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.team_detail{
+    height: 220px;
+}
+
+.team_detail:hover{
+    margin-top: -220px;
+    opacity: 0.9;
+}
+
+.detail{
+    height: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}*/
+
+.name {
+    color: #ab2d30;
+    display: block;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.role {
+    color: #666;
+    display: block;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.team_social{
+
+}
+
+.team_social li{
+    float: left;
+    list-style: none;
+    margin-right: 18px;
+    margin-top: 40px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+a.social_icon {
+    color: #333;
+}
+
+.social_icon.facebook:hover{
+    color: #3b5998;
+}
+
+.social_icon.twitter:hover{
+    color: #00aced;
+}
+
+.social_icon.dribbble:hover{
+    color: #ea4c89;
+}
+
+/* ==========================================================================
+   Skill Section styles
+   ========================================================================== */
+
+.skill_container{
+    margin: 40px auto 0;
+}
+
+
+.progress{
+    height: auto;
+    box-shadow: none;
+    border-radius: 1px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.duration{
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 3s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+    -ms-animation-duration: 3s;
+    -ms-animation-delay: 3s;
+}
+
+.my_progress-bar {
+   /* background-color: #ffeaa1;
+    */
+    /*background-image: linear-gradient(to bottom, #ebebeb 0px, #f5f5f5 100%);
+    */
+
+    background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-size: 21px;
+    height: 38px;
+}
+.my_progress-bar .bar {
+    /*background-color: #f1b800;
+    */
+    background-image: linear-gradient(to bottom, #d9534f 0px, #c9302c 100%);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    padding-left: 25px;
+    position: relative;
+    height: 38px;
+}
+.my_progress-bar span {
+    /*background-color: #e3ad00;
+    */
+    background-color: #ab2d30;
+    border-radius: 0 2px 2px 0;
+    display: block;
+    height: 100%;
+    padding: 5px 5px 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.my_progress-bar span:before {
+    /*background-color: #e3ad00;
+    */
+    background-color: #ab2d30;
+    content: "";
+    height: 6px;
+    left: -3px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 6px;
+}
+
+.align-skill {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 10px 8px;
+    padding-top: 6px;
+}
+
+.margin-bottom{
+    margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   Services Section styles
+   ========================================================================== */
+.icon{
+	background-color: #eeeeee;
+    border: 10px solid #e8e8e8;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+	-moz-border-radius:100px;
+    color: #ab2d30;
+    display: block !important;
+    font-size: 50px;
+    height: 150px;
+    line-height: 130px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all 500ms ease 0s;
+    width: 150px;
+
+}
+
+.services_container{
+	margin-top: 60px;
+}
+
+.services_container h3{
+	color: #ab2d30;
+	font-family: 'bebas_neueregular','sans-serif';
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.services_container p{
+	font-family: 'Arial';
+	font-weight: 300;
+    margin: 0 0 10px;
+    font-size: 15px;
+    text-align: center;
+    text-rendering: optimizelegibility;
+
+}
+
+/* ==========================================================================
+   Contact Section styles
+   ========================================================================== */
+
+.address_ul li{
+	float: left;
+	width: 220px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	color: #ccc;
+	margin-left: 103px;
+	margin-top: 8px;
+	text-align: center;
+	list-style: none;
+}
+
+#map_canvas{
+	width: 100%;
+	height: 300px;
+	margin-top: 30px;
+}
+
+#contact_container{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#contact-form textarea.form-control {
+    height: 165px;
+    resize: none;
+}
+
+.btn-custom, .btn-custom:hover{
+    background-color: #ab2d30;
+    border-color: #ab2d30;
+    color: #fff;
+    margin-left: 275px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.contact_2_container{
+    margin-top: 100px;
+    margin-left: 56px;
+}
+
+.contact_2_container li{
+    list-style: none;
+    float: left;
+    width: 220px;
+    margin-left: 100px;
+    color: #999999;
+}
+
+.contact_2_container p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.contact_2_container i{
+    margin-left: 20px;
+}
+
+.fa-8x{
+    font-size: 8em;
+}
+
+#fb{
+    font-weight: bold;
+}
+
+.copyright{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    background-color: #ab2d30;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 315px;
+}
+
+.copyright > a{
+    color: #fff;
+    outline: none;
+}
