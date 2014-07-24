@@ -54,9 +54,19 @@ function initialize() {
 
 
 $('.timer').countTo();
-$('.flexslider').flexslider({
-    animation: "slide",
-    directionNav: false
-  });
+
+$('#home').mouseenter(function (){
+  $('.menu').removeClass('first-nav').addClass('second-nav');
+
+});
+
+$('#skill').mouseenter(function() {
+  $('#skill_sx').css('visibility','visible').addClass('bounceInLeft animated');
+  $('#skill_dx').css('visibility','visible').addClass('bounceInRight animated');
+});
+
+$('#address').mouseenter(function() {
+  $('#contact_container').css('visibility','visible').addClass('bounceInUp animated');
+});
 
 });
