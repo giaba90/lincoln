@@ -19,7 +19,7 @@ Copyright
 ---------
 All my personal project are under GNU General Public License v2
 
-Copyright (C) 2014  Gianluca Barranca (@giaba90)
+Copyright (C) 2014  Gianluca Barranca ([@giaba90](https://twitter.com/giaba90))
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
