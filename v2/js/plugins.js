@@ -23,11 +23,11 @@
 
 // Place any jQuery/helper plugins in here.
 $( document ).ready(function() {
-$(".navigation a").bind("click", function () {
+/*$(".navigation a").bind("click", function () {
 $(".navigation a").removeClass("active");
 $(this).addClass("active");
 });
-
+*/
 	var ascensor = $('#ascensorBuilding').ascensor();
 	var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 	$(".navigation li").click(function(event, index) {
@@ -51,12 +51,6 @@ function initialize() {
             var map = new google.maps.Map(map_canvas, map_options)
           }
          google.maps.event.addDomListener(window, 'load', initialize);
-
-
-$('#home').mouseenter(function (){
-  $('.menu').removeClass('first-nav').addClass('second-nav');
-
-});
 
 $('#skill').mouseenter(function() {
   $('#skill_sx').css('visibility','visible').addClass('bounceInLeft animated');

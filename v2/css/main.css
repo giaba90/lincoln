@@ -63,23 +63,6 @@ color:#fff;
 	transition: all 0.5s ease 0s;
 }
 
-.first-nav.white-nav {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.second-nav.white-nav {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-from-top {
-    top: -75px !important;
-}
-.second-nav {
-    top: 0 !important;
-}
-
 .name_theme{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -88,22 +71,42 @@ color:#fff;
 	margin-left: 12px;
 }
 
-.name_theme, .navigation{
+.name_theme{
 	display: block;
 	float: left;
+    position: relative;
+    left: 3%;
 }
 
-.navigation{
-	margin-left: 100px;
-}
+ .navigation{
+    display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 20%;
+ }
 
 .navigation li{
-	width: 220px;
+/*	width: 220px; */
 	font-family: 'Open Sans', sans-serif;
 	float: left;
-	margin-top: 8px;
-	text-align: center;
+	/*margin-top: 8px; */
+    text-align: center;
 	list-style: none;
+}
+
+.navigation ul li.selected a, .navigation ul li a:hover {
+    color: #ab2d30;
+}
+
+.navigation ul li a{
+    cursor: pointer;
+    font-size: 16px;
+    height: 100%;
+    padding-left: 19px;
+    padding-right: 19px;
+    transition: all 0.3s ease 0s;
 }
 
 .navigation a{
@@ -112,6 +115,10 @@ color:#fff;
 	outline: none;
 }
 
+.selected{
+    background-color: #f8f8f8;
+}
+/*
 .navigation a:hover{
 	text-decoration: none;
 	color: #ab2d30;
@@ -126,29 +133,7 @@ color:#fff;
 	color: #ab2d30;
 	border-bottom: 5px solid  #ab2d30;
 }
-
-/* ==========================================================================
-   Slider styles
-   ========================================================================== */
-
-.flexslider{
-    border: 0 none;
-    box-shadow: none;
-    margin: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-}
-
-li.clone{
-    width: 1280px;
-}
-
-ol.flex-control-nav {
-    bottom: 0px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
+*/
 
 /* ==========================================================================
    Section styles
