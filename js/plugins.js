@@ -52,12 +52,6 @@ function initialize() {
           }
          google.maps.event.addDomListener(window, 'load', initialize);
 
-
-<<<<<<< HEAD
-=======
-$('.timer').countTo();
-
->>>>>>> FETCH_HEAD
 $('#home').mouseenter(function (){
   $('.menu').removeClass('first-nav').addClass('second-nav');
 
